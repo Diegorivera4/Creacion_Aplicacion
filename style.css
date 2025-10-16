@@ -1,0 +1,132 @@
+/* Fondo degradado violeta-azul */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #8a4fff, #4cc9f0);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  color: white;
+}
+
+/* Contenedor principal */
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+.fecha {
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 0.95em;
+  color: #f8f9fa;
+  margin-bottom: 25px;
+}
+
+/* Campo de entrada */
+.agregar-tarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.agregar-tarea input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #555;
+}
+
+.agregar-tarea button {
+  background-color: #8a4fff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.agregar-tarea button:hover {
+  background-color: #6b32cc;
+}
+
+/* Lista de tareas */
+h2 {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+li.hecho {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: line-through;
+  color: #e0e0e0;
+}
+
+/* Botones */
+button.editar,
+button.eliminar,
+button.hecho {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: transform 0.2s;
+}
+
+button.editar:hover {
+  transform: scale(1.2);
+  color: #ffd43b;
+}
+
+button.eliminar:hover {
+  transform: scale(1.2);
+  color: #ff6b6b;
+}
+
+button.hecho:hover {
+  transform: scale(1.2);
+  color: #51cf66;
+}
